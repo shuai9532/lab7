@@ -35,6 +35,7 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+app.get('/min', index.viewMin);
 // Add routes here
 app.get('/', index.view);
 app.get('/project/:id', project.view);
